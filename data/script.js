@@ -56,3 +56,110 @@ function sumArray(x) {
 }
 
 sumArray([1, 2, 3]);
+
+//FUNCTION EXPRESSION
+
+const square = function (num) {
+	return num * num;
+};
+
+square(5);
+
+//FACTORY FUNCTION
+
+function makeBetweenFunc(min, max) {
+	return function (num) {
+		return num >= min && num <= max;
+	};
+}
+
+let isChild = makeBetweenFunc(0, 18);
+
+isChild(15);
+isChild(19);
+
+let isAdult = makeBetweenFunc(19, 64);
+
+isAdult(25);
+isAdult(88);
+
+//defining methods //function
+
+// let myMethods = {
+// 	multiply: function (num) {
+// 		return num * num;
+// 	},
+// 	signature: function (message) {
+// 		return message + " //Jacob Rose";
+// 	},
+// };
+
+//easiest way to write same thing
+
+let myMethods = {
+	multiply(num) {
+		return num * num;
+	},
+	signature(message) {
+		return message + " //Jacob Rose";
+	},
+};
+
+myMethods.multiply(6);
+myMethods.signature("Have a great day!");
+
+//another example
+
+let mySquare = {
+	area(side) {
+		return side * side;
+	},
+	perimeter(side) {
+		return side * 4;
+	},
+};
+
+mySquare.area(10);
+mySquare.perimeter(10);
+
+//THIS KEYWORD
+
+//example with object and method
+
+const hen = {
+	name: "Helen",
+	eggCount: 0,
+	layAnEgg() {
+		this.eggCount += 1;
+		return "EGG";
+	},
+};
+
+hen.name; // Helen
+hen.eggCount; // 0
+hen.layAnEgg(); // EGG
+hen.layAnEgg(); // EGG
+hen.eggCount; // 2
+
+//TRY & CATCH
+
+try {
+	fullNameOfUser.toUpperCase();
+} catch {
+	console.log("fullNameOfUser doesn't exist, try something different");
+}
+
+// ...in function
+
+function yall(msg) {
+	try {
+		console.log(msg.toUpperCase().repeat(3));
+	} catch (e) {
+		//e - ERROR in string form (?)
+		console.log(e);
+		console.log("You have to put string next time!");
+	}
+}
+
+yall(1224);
+yall("Hello there!");
