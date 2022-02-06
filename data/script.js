@@ -228,6 +228,7 @@ const idOfInterval = setInterval(() => {
 }, 3000);
 
 clearInterval(idOfInterval);
+console.log("Interval Here, current: stopped");
 
 //filter method
 
@@ -237,9 +238,9 @@ numbersA.filter((n) => {
 	return n <= 5;
 });
 
-let highestRatedMovies = movies.filter((m) => {
-	return m.score > 80;
-});
+// let highestRatedMovies = movies.filter((m) => {
+// 	return m.score > 80;
+// });
 
 //easiest way of this ^
 
@@ -280,3 +281,34 @@ let topRatedMovies = movies.reduce((bestMovie, currMovie) => {
 	}
 	return bestMovie;
 });
+
+//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+//NEWER JavaScript Features
+
+function defaultParam(num) {
+	// if (num === undefined) {
+	// 	num = 6;
+	// }
+	// easiest way of this ^
+	num = typeof num === undefined ? (num = 6) : (num = num);
+
+	return Math.floor(Math.random() * num) + 1;
+}
+
+console.log("\n-----------------------\n");
+
+//IF STATEMENT
+let result1 = 10 > 5 ? "yes" : "no";
+console.log(result1); // 👉️ 'yes'
+
+let result2 = 10 > 100 ? "yes" : "no";
+console.log(result2); // 👉️ 'no'
+
+console.log("\n-----------------------\n");
+
+//spread in function calls
+
+let numbersTwo = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+console.log(numbersTwo);
+console.log(...numbersTwo);
