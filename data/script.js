@@ -163,3 +163,46 @@ function yall(msg) {
 
 yall(1224);
 yall("Hello there!");
+
+//map method
+
+let numbers = [1, 2, 3, 4, 5];
+
+let doubleNumbers = numbers.map(function (n) {
+	return n * 2;
+});
+
+let movies = [
+	{
+		title: "Amadeus",
+		score: 70,
+	},
+	{
+		title: "Colombiana",
+		score: 89,
+	},
+	{
+		title: "Avengers",
+		score: 95,
+	},
+];
+
+let moviesTitles = movies.map(function (movie) {
+	return movie.title.toUpperCase();
+});
+
+//arrow functions
+
+let square = (x) => {
+	return x * x;
+};
+
+let sum = (x, y) => {
+	return x + y;
+};
+
+//except {} u can use (), when arrow function return only one thing
+//in formatting, the parentheses are removed
+//parentheses ()
+
+let rollDie = () => math.floor(Math.random() * 6) + 1;
