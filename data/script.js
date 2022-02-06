@@ -59,7 +59,7 @@ sumArray([1, 2, 3]);
 
 //FUNCTION EXPRESSION
 
-const square = function (num) {
+let square = function (num) {
 	return num * num;
 };
 
@@ -126,7 +126,7 @@ mySquare.perimeter(10);
 
 //example with object and method
 
-const hen = {
+let hen = {
 	name: "Helen",
 	eggCount: 0,
 	layAnEgg() {
@@ -178,6 +178,14 @@ let movies = [
 		score: 70,
 	},
 	{
+		title: "Star",
+		score: 46,
+	},
+	{
+		title: "Heroes",
+		score: 66,
+	},
+	{
 		title: "Colombiana",
 		score: 89,
 	},
@@ -193,7 +201,7 @@ let moviesTitles = movies.map(function (movie) {
 
 //arrow functions
 
-let square = (x) => {
+let squareArea = (x) => {
 	return x * x;
 };
 
@@ -206,3 +214,56 @@ let sum = (x, y) => {
 //parentheses ()
 
 let rollDie = () => math.floor(Math.random() * 6) + 1;
+
+//setTimeout and setInterval
+
+setTimeout(() => {
+	console.log("Right here!");
+}, 3000);
+
+console.log("\n-----------------------\n");
+
+const idOfInterval = setInterval(() => {
+	console.log("Im in loop right now!");
+}, 3000);
+
+clearInterval(idOfInterval);
+
+//filter method
+
+let numbersA = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+numbersA.filter((n) => {
+	return n <= 5;
+});
+
+let highestRatedMovies = movies.filter((m) => {
+	return m.score > 80;
+});
+
+//easiest way of this ^
+
+let highestRatedMovies = movies.filter((m) => m.score > 80);
+
+//some & every methods
+
+let words = ["dog", "jelly", "bird", "onion", "apple", "biscuits"];
+
+//every element
+words.every((word) => word[0] === "b"); //false
+
+//any element
+words.some((word) => {
+	return word.length < 4;
+}); //true
+
+//another example
+
+function allEvens(numbers) {
+	return numbers.every((n) => {
+		return n % 2 === 0;
+	});
+}
+
+allEvens([2, 4, 6, 8]); //true
+allEvens([1, 2, 3, 4]); //false
