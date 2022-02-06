@@ -267,3 +267,16 @@ function allEvens(numbers) {
 
 allEvens([2, 4, 6, 8]); //true
 allEvens([1, 2, 3, 4]); //false
+
+//reduce method
+
+[1, 2, 3, 4, 5, 6, 7, 8, 9].reduce((a, b) => {
+	return a + b;
+});
+
+let topRatedMovies = movies.reduce((bestMovie, currMovie) => {
+	if (currMovie.score > bestMovie.score) {
+		return currMovie;
+	}
+	return bestMovie;
+});
