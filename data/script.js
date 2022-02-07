@@ -218,7 +218,7 @@ let rollDie = () => math.floor(Math.random() * 6) + 1;
 //setTimeout and setInterval
 
 setTimeout(() => {
-	console.log("Right here!");
+	console.log("Right here! //settimeout");
 }, 3000);
 
 console.log("\n-----------------------\n");
@@ -312,3 +312,26 @@ console.log("\n-----------------------\n");
 let numbersTwo = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 console.log(numbersTwo);
 console.log(...numbersTwo);
+
+console.log("\n-----------------------\n");
+
+//SPLIT
+
+let stringThree = "Example amazing beautiful text";
+let wordsThree = stringThree.split(" "); // split words using spaces, and create an array
+let chartsThree = wordsThree[1].split(""); // split charts in words
+
+console.log(wordsThree[1]); //Amazing
+console.log(chartsThree[1]); //m
+
+//spread in function, continue
+
+console.log("\n-----------------------\n");
+
+function race(gold, silver, ...rest) {
+	console.log(`GOLD MEDAL GOES TO: ${gold}`);
+	console.log(`SILVER MEDAL GOES TO: ${silver}`);
+	console.log(`AND THANKS EVERYONE ELSE: ${rest}`);
+}
+
+race("Timmy", "Jimmy", "Pimmy", "Elise", "Jason", "Anna");
