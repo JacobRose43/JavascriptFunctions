@@ -349,6 +349,8 @@ let [bronze, silver, gold, ...everyoneElse] = scoresTwo;
 
 console.log(`${bronze}, ${silver}, ${gold} \n(${everyoneElse})`);
 
+console.log("\n-----------------------\n");
+
 //destructing objects
 
 let user = {
@@ -358,3 +360,10 @@ let user = {
 	lastName: "Jonas",
 	born: 2001,
 };
+
+// let userEmail = user.email;
+// let userPassword = user.password;
+
+let { email: userEmail, password: userPassword, firstName: userFirstName, lastName: userLastName, born: userBorn } = user;
+
+console.log(`${userFirstName} ${userLastName} - was born in ${userBorn}`);
