@@ -385,3 +385,10 @@ function fullName({ userFirstName, userLastName, password = "Hidden" }) {
 }
 
 movies.filter(({ score }) => score >= 80);
+
+console.log("\n-----------------------\n");
+//movies map
+
+movies.map((movie) => {
+	console.log(`${movie.title} is rated ${movie.score}`);
+});
