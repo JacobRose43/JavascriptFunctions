@@ -335,3 +335,26 @@ function race(gold, silver, ...rest) {
 }
 
 race("Timmy", "Jimmy", "Pimmy", "Elise", "Jason", "Anna");
+
+console.log("\n-----------------------\n");
+
+//destructing arrays
+
+let scoresTwo = [12315, 82314, 32352, 26599, 12941, 55004];
+
+let highScoreTwo = scoresTwo[0];
+let secondHighScoreTwo = scoresTwo[1];
+
+let [bronze, silver, gold, ...everyoneElse] = scoresTwo;
+
+console.log(`${bronze}, ${silver}, ${gold} \n(${everyoneElse})`);
+
+//destructing objects
+
+let user = {
+	email: "jimmy@gmail.com",
+	password: "scAp02xC0",
+	firstName: "Jimmy",
+	lastName: "Jonas",
+	born: 2001,
+};
