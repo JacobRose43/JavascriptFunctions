@@ -297,8 +297,8 @@ function defaultParam(num) {
 }
 
 console.log("\n-----------------------\n");
-
 //IF STATEMENT
+
 let result1 = 10 > 5 ? "yes" : "no";
 console.log(result1); // 👉️ 'yes'
 
@@ -306,7 +306,6 @@ let result2 = 10 > 100 ? "yes" : "no";
 console.log(result2); // 👉️ 'no'
 
 console.log("\n-----------------------\n");
-
 //spread in function calls
 
 let numbersTwo = [1, 2, 3, 4, 5, 6, 7, 8, 9];
@@ -314,7 +313,6 @@ console.log(numbersTwo);
 console.log(...numbersTwo);
 
 console.log("\n-----------------------\n");
-
 //SPLIT
 
 let stringThree = "Example amazing beautiful text";
@@ -324,9 +322,8 @@ let chartsThree = wordsThree[1].split(""); // split charts in words
 console.log(wordsThree[1]); //Amazing
 console.log(chartsThree[1]); //m
 
-//spread in function, continue
-
 console.log("\n-----------------------\n");
+//spread in function, continue
 
 function race(gold, silver, ...rest) {
 	console.log(`GOLD MEDAL GOES TO: ${gold}`);
@@ -337,7 +334,6 @@ function race(gold, silver, ...rest) {
 race("Timmy", "Jimmy", "Pimmy", "Elise", "Jason", "Anna");
 
 console.log("\n-----------------------\n");
-
 //destructing arrays
 
 let scoresTwo = [12315, 82314, 32352, 26599, 12941, 55004];
@@ -350,7 +346,6 @@ let [bronze, silver, gold, ...everyoneElse] = scoresTwo;
 console.log(`${bronze}, ${silver}, ${gold} \n(${everyoneElse})`);
 
 console.log("\n-----------------------\n");
-
 //destructing objects
 
 let user = {
@@ -367,3 +362,26 @@ let user = {
 let { email: userEmail, password: userPassword, firstName: userFirstName, lastName: userLastName, born: userBorn } = user;
 
 console.log(`${userFirstName} ${userLastName} - was born in ${userBorn}`);
+
+let user2 = {
+	email: "henry@gmail.com",
+	firstName: "Henry",
+	lastName: "Moreno",
+	born: 2001,
+};
+
+console.log("\n-----------------------\n");
+//default value which is doesnt exist in that object
+
+let { firstName, lastName, email, password = "Hidden" } = user2;
+
+console.log(`${firstName} ${lastName}\n email: ${email}\n password: ${password}`);
+
+console.log("\n-----------------------\n");
+//Destructing params
+
+function fullName({ userFirstName, userLastName, password = "Hidden" }) {
+	console.log(`${userFirstName} ${userLastName}`);
+}
+
+movies.filter(({ score }) => score >= 80);
