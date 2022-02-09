@@ -392,3 +392,51 @@ console.log("\n-----------------------\n");
 movies.map((movie) => {
 	console.log(`${movie.title} is rated ${movie.score}`);
 });
+
+//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+//DOM
+
+//document.getElementById
+
+// let image = document.getElementById("unicorn");
+// let heading = document.getElementById("mainheading");
+
+//document.getElementsByTagName
+
+//let img = document.getElementsByTagName("img");
+//let h1 = document.getElementsByTagName("h1");
+
+//document.getElementsByClassName
+
+//let square = document.getElementsByClassName("square");
+//let triangle = document.getElementsByClassName("triangle");
+
+//
+//document.querySelector
+//
+
+//Finds first id example1
+//let example1 = document.querySelector("#example1");
+
+//Find first class example2
+//let example2 = document.querySelector(".example2");
+
+//Find first h1 tag
+//let example3 = document.querySelector("example3");
+//Find second h1 tag
+//let example4 = document.querySelector("example4:nth-of-type(2)");
+
+//document.querySelector("a[title="Java"]")
+
+//We can use in query selector css methods like nth-of-child or [atribute="something"]
+
+//
+//document.querySelectorAll - CHOOSING ALL MATCHING ELEMENTS
+//
+
+//const links = document.querySelectorAll("p a"); //anchor tags in paragraphs
+
+//for(let link of links){
+// console.log(link.href);
+// }
+//DISPLAY EVERY LINKS WHICH ANCHOR TAGS HAVE 
