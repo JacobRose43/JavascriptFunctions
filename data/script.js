@@ -439,4 +439,12 @@ movies.map((movie) => {
 //for(let link of links){
 // console.log(link.href);
 // }
-//DISPLAY EVERY LINKS WHICH ANCHOR TAGS HAVE 
+//DISPLAY EVERY LINKS WHICH ANCHOR TAGS HAVE
+
+//attributes
+
+//let firstLink = document.querySelector("a");
+//firstLink.href;
+
+//firstLink.getAttribute('href');
+//firstLink.setAttribute('href', 'http://example.com');
