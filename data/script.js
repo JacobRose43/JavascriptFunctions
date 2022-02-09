@@ -448,3 +448,26 @@ movies.map((movie) => {
 
 //firstLink.getAttribute('href');
 //firstLink.setAttribute('href', 'http://example.com');
+
+//style
+
+//let customElement = document.querySelector('.exampleClassName');
+//customElement.style.color = 'black';
+//customElement.style.fontSize = '3em';
+//customElement.style.border = '1px solid white';
+
+//window.getComputedStyle(customElement).fontSize
+//"3em"
+//window.getComputedStyle(customElement).color
+//"black"
+
+//more examples
+
+// let cont = document.querySelector("#container");
+// cont.style.textAlign = "center";
+
+// let image = document.querySelector("img");
+// image.style.width = "150px";
+// image.style.borderRadius = "50%";
+
+
