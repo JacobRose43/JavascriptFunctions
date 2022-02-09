@@ -470,4 +470,17 @@ movies.map((movie) => {
 // image.style.width = "150px";
 // image.style.borderRadius = "50%";
 
+//ADD CLASSES
 
+// cont.classList.add('purple');
+// cont.classList.add('border');
+// cont.classList.remove('purple');
+// cont.classList.contains('purple'); //false
+
+//something like switch to ON or OFF class
+//if use one time, switch on ON if OFF or reverse
+
+// cont.classList.toggle('purple'); //OFF
+// cont.classList.toggle('purple'); //ON
+// cont.classList.toggle('purple'); //OFF
+// cont.classList.toggle('purple'); //ON
