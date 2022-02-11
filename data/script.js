@@ -518,3 +518,34 @@ movies.map((movie) => {
 // p.append(" I am new in this paragraph");
 // p; //output: Hello, we have really nice day today! I am new in this paragraph
 // p.append(" I am new in this paragraph ", "Hello there! ", "Another text! ");
+
+//prepend = adding of begining
+
+// let b = document.createElement('b);
+// newB.append("Hi! ");
+// p.prepend(b); output: Hi! Hello, we have really nice day today! I am new in this paragraph (...);
+
+//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+//insert.AdjacentElement;  !IMPORTANT
+
+// targetElement.insertAdjacentElement(position, element);
+
+// 'beforebegin': Before the targetElement itself.
+// 'afterbegin': Just inside the targetElement, before its first child.
+// 'beforeend': Just inside the targetElement, after its last child.
+// 'afterend': After the targetElement itself.
+
+//after - insert element after another element
+
+// h1.after(h3); // h3 after h1
+
+//appendChild loop - creating 100 buttons
+
+// let container = document.querySelector("#container");
+
+// for (let i = 0; i < 100; i++) {
+// 	let newButton = document.createElement("button");
+// 	newButton.innerText = "Hey!";
+// 	container.appendChild(newButton);
+// }
