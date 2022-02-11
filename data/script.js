@@ -549,3 +549,38 @@ movies.map((movie) => {
 // 	newButton.innerText = "Hey!";
 // 	container.appendChild(newButton);
 // }
+
+// removeChild & remove
+
+// let firstLi = document.querySelector('li');
+// let ul = firstLi.parentElement;
+
+// ul.removeChild(firstLi);
+//removing child element inside div or anything else.
+
+// ul.remove();
+// methods, removes the object from the three it belongs to, just remove itselt (choosen element);
+
+//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+//Creating page with 100 images of pokemon
+
+// let container = document.querySelector("#container");
+// let baseUrl = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/";
+
+for (let i = 0; i <= 151; i++) {
+	let newImg = document.createElement("img");
+	let label = document.createElement("div");
+	let pokemon = document.createElement("span");
+	label.innerText = `#${i}`;
+	newImg.src = `${baseUrl}${i}.png`;
+
+	pokemon.appendChild(newImg);
+	pokemon.appendChild(label);
+	container.appendChild(pokemon);
+
+	let divs = document.querySelector("div");
+	divs.style.display = "inline-block";
+	divs.style.textAlign = "center";
+	newImg.style.display = "block";
+}
