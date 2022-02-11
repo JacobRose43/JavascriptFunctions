@@ -485,12 +485,36 @@ movies.map((movie) => {
 // cont.classList.toggle('purple'); //OFF
 // cont.classList.toggle('purple'); //ON
 
-//PARENT & CHILD & SIBLING 
+//PARENT & CHILD & SIBLING
 
 // let square = document.querySelector('.square');
 
 // square.nextSibling; //next element
 // square.previousSibling; //previous element
 
+// square.nextSiblingElement; //next element
+// square.previousSiblingElement; //previous element
+
 // square.childElement; //child element
 // square.parentElement; //parent element
+
+//!!!! DOM NODE & HTML elements
+
+//APPEND & APPEND CHILD
+
+// const newImg = document.createElement("img");
+// newImg.src =
+// 	"https://images.unsplash.com/photo-1643075621108-00ddbe129d52?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80";
+
+// document.body.appendChild(newImg);
+// newImg.style.width = "30%";
+// newImg.classList.add('square);
+
+// let newH3 = document.createElement("h3");
+// newH3.innerText = "I am H3! Hello!";
+// document.body.appendChild(newH3);
+
+//let p = document.querySelector('p); // <- exist, output: Hello, we have really nice day today!
+// p.append(" I am new in this paragraph");
+// p; //output: Hello, we have really nice day today! I am new in this paragraph
+// p.append(" I am new in this paragraph ", "Hello there! ", "Another text! ");
