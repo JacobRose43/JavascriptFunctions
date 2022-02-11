@@ -484,3 +484,13 @@ movies.map((movie) => {
 // cont.classList.toggle('purple'); //ON
 // cont.classList.toggle('purple'); //OFF
 // cont.classList.toggle('purple'); //ON
+
+//PARENT & CHILD & SIBLING 
+
+// let square = document.querySelector('.square');
+
+// square.nextSibling; //next element
+// square.previousSibling; //previous element
+
+// square.childElement; //child element
+// square.parentElement; //parent element
