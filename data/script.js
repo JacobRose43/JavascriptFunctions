@@ -568,19 +568,19 @@ movies.map((movie) => {
 // let container = document.querySelector("#container");
 // let baseUrl = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/";
 
-for (let i = 0; i <= 151; i++) {
-	let newImg = document.createElement("img");
-	let label = document.createElement("div");
-	let pokemon = document.createElement("span");
-	label.innerText = `#${i}`;
-	newImg.src = `${baseUrl}${i}.png`;
+// for (let i = 0; i <= 151; i++) {
+// 	let newImg = document.createElement("img");
+// 	let label = document.createElement("div");
+// 	let pokemon = document.createElement("span");
+// 	label.innerText = `#${i}`;
+// 	newImg.src = `${baseUrl}${i}.png`;
 
-	pokemon.appendChild(newImg);
-	pokemon.appendChild(label);
-	container.appendChild(pokemon);
+// 	pokemon.appendChild(newImg);
+// 	pokemon.appendChild(label);
+// 	container.appendChild(pokemon);
 
-	let divs = document.querySelector("div");
-	divs.style.display = "inline-block";
-	divs.style.textAlign = "center";
-	newImg.style.display = "block";
-}
+// 	let divs = document.querySelector("div");
+// 	divs.style.display = "inline-block";
+// 	divs.style.textAlign = "center";
+// 	newImg.style.display = "block";
+// }
