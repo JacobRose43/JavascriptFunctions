@@ -584,3 +584,35 @@ movies.map((movie) => {
 // 	divs.style.textAlign = "center";
 // 	newImg.style.display = "block";
 // }
+
+//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+//EVENTS
+
+//inline EVENTS
+
+// FIRST option - bad
+
+// <button onclick="alert('you clicked me!'); alert('stop clicking!')"></button>
+
+// SECOND option - mehh
+
+// document.querySelector('btn');
+// btn.onclick = function () {
+// 	console.log("You clicked me!");
+// 	consol.log("aaaaaaaa click click click!!");
+// };
+
+// function scream() {
+// 	console.log("AAAAAAAA");
+// }
+
+// btn.onmouseenter = scream;
+
+//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+//THIRD option - BESTTTT
+
+// btn.addEventListener('click', ()=> {
+//	console.log("clicked!");
+// })
