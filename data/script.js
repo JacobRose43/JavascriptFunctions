@@ -627,3 +627,17 @@ movies.map((movie) => {
 // btn.addEventListener('click', ()=> {
 //	console.log("clicked!");
 // })
+
+// let hello = document.querySelector("#hello");
+// let goodbye = document.querySelector("#goodbye");
+
+// hello.addEventListener("click", () => {
+// 	console.log("hello");
+// });
+
+// goodbye.addEventListener("click", () => {
+// 	console.log("goodbye");
+// });
+
+// btn.addEventListener('click', twist, { once: true });
+// can be used only one time (refresh and function again working only for one click);
