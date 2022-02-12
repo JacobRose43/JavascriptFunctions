@@ -609,6 +609,17 @@ movies.map((movie) => {
 
 // btn.onmouseenter = scream;
 
+// !!!IMPORTANT
+
+// btn.onclick = firstText; //function named firstText - console.log('red');
+// btn.onclick = secondText; //function named secondText - console.log('blue');
+// IN CONSOLE, WE CAN SEE ONLY "BLUE" TEXT, BECAUSE firstText is overwritten by secondText, LIKE IN CSS
+// for example css:
+// .text{
+//		color: red;
+// 		color: blue;
+// } //text is blue, never was red;
+
 //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 //THIRD option - BESTTTT
