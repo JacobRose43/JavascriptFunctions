@@ -679,7 +679,10 @@ movies.map((movie) => {
 
 // FORM EVENTS & PreventDefault
 
+//
 // const form = ~~~~~~;
+// const input = ~~~~;
+// const list = ~~~~;
 
 // form.addEventListener("submit", function (e) {
 // 	e.preventDefault();
@@ -688,9 +691,28 @@ movies.map((movie) => {
 // form action doesnt moves us on another page, SO
 // we can still do anything on current page
 
+//
 // element.value; // getting value of input or something else
 // if input type text, has typed "Hello"
 // using element.value we get the returned values
 //
+
 //
+// Simple example - adding task to list Event Function:
 //
+
+// const form = document.querySelector('form');
+// const product = document.querySelector('#product');
+// const qty = document.querySelector('#qty');
+// const list = document.querySelector('#list');
+
+// form.addEventListener("submit", function (e) {
+//     e.preventDefault();
+//    let aValue = product.value;
+//    let bValue = qty.value;
+//    let newLi = document.createElement("li");
+//    newLi.innerText = `${bValue} ${aValue}`;
+//    list.appendChild(newLi);
+//    product.value = "";
+//    qty.value = "";
+// });
