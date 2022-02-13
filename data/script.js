@@ -661,3 +661,36 @@ movies.map((movie) => {
 // console.log(event.key) // clicked "left shift" // console: Shift
 // console.log(event.target) //!!!!!!!!!!!!!!!!!!!!! console: ShiftLeft
 
+// window.addEventListener('keydown', function (e) {
+// 	switch (e.code){
+// 		case 'ArrowUp':
+//      	console.log("UP!");
+//			break;
+// 		case 'ArrowDown':
+//      	console.log("DOWN!");
+//  		break;
+// 		default:
+//      	console.log("ignore..");
+//  		break;
+// 	}
+// })
+
+//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+// FORM EVENTS & PreventDefault
+
+// const form = ~~~~~~;
+
+// form.addEventListener("submit", function (e) {
+// 	e.preventDefault();
+// })
+
+// form action doesnt moves us on another page, SO
+// we can still do anything on current page
+
+// element.value; // getting value of input or something else
+// if input type text, has typed "Hello"
+// using element.value we get the returned values
+//
+//
+//
