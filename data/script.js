@@ -641,3 +641,23 @@ movies.map((movie) => {
 
 // btn.addEventListener('click', twist, { once: true });
 // can be used only one time (refresh and function again working only for one click);
+
+//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+// Keyboard Events & Events Objects
+
+// btn.addEventListener("click", function (event) {
+// 	console.log(event); //Display info about event (click), for example coordinates where mouse being clicked
+// });
+
+// examples:
+
+// console.log(event.key) // clicked "e" // console: e
+// console.log(event.target) //!!!!!!!!!!!! console: KeyE
+
+// console.log(event.key) // clicked "space" // console:
+// console.log(event.target) //!!!!!!!!!!!!!!!! console: Space
+
+// console.log(event.key) // clicked "left shift" // console: Shift
+// console.log(event.target) //!!!!!!!!!!!!!!!!!!!!! console: ShiftLeft
+
