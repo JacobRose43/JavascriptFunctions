@@ -750,3 +750,17 @@ movies.map((movie) => {
 // 	let xcz = Math.floor(Math.random() * 255 + 125);
 // 	console.log(xcz);
 // }
+
+//
+//
+// STOP BUBBLING MORE EVENTS FROM CONTAINER DIV OR ANOTHER MARKUP
+// EXAMPLE
+
+// button.addEventListener("click", function (e) {
+// 	container.style.backgroundColor = randomColor();
+// 	e.stopPropagation(); // THAT STOPED ANOTHER EVENTS EXECUTE
+// });
+
+// container.addEventListener("click", function (e) {
+// 	container.classList.toggle("Hide");
+// });
