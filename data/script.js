@@ -716,3 +716,26 @@ movies.map((movie) => {
 //    product.value = "";
 //    qty.value = "";
 // });
+
+// INPUT change events
+
+// input.addEventListener("change", function(e){
+// 	let inValue = input.value;
+// 	console.log('inValue');
+// })
+
+// EXAMPLE with method 'input'
+
+// let h1 = document.querySelector("h1");
+// const h1Text = h1.innerText;
+
+// let username = document.querySelector("#username");
+
+// username.addEventListener("input", function (e) {
+// 	let inputValue = username.value;
+// 	if (inputValue !== "") {
+// 		h1.innerText = `Welcome, ${inputValue}`;
+// 	} else {
+// 		h1.innerText = h1Text;
+// 	}
+// });
