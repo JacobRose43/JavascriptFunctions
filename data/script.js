@@ -764,3 +764,9 @@ movies.map((movie) => {
 // container.addEventListener("click", function (e) {
 // 	container.classList.toggle("Hide");
 // });
+
+// EXAMPLE WITH DELEGATE, add event to parent method, and applying it to childs like ul>li*5
+
+// tweetsContainer.addEventListener("click", function (e) {
+// 	e.target.nodeName === "LI" && e.target.remove();
+// });
