@@ -739,3 +739,14 @@ movies.map((movie) => {
 // 		h1.innerText = h1Text;
 // 	}
 // });
+
+// MATH RANDOM MIN AND MAX AMOUNT OF RANDOM GENERATE
+
+// 125 - MIN
+// 255 + 125 = MAX
+// 380
+
+// for (let i = 0; i < 110; i++) {
+// 	let xcz = Math.floor(Math.random() * 255 + 125);
+// 	console.log(xcz);
+// }
