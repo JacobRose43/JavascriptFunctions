@@ -770,3 +770,32 @@ movies.map((movie) => {
 // tweetsContainer.addEventListener("click", function (e) {
 // 	e.target.nodeName === "LI" && e.target.remove();
 // });
+
+//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+// THE CALL STACK //stosy, call stack, call stacks
+
+const multiply = (x, y) => x * y;
+
+const square = (x) => multiply(x, x);
+
+const isRightTriangle = (a, b, c) => {
+	return square(a) + square(b) === square(c);
+};
+
+isRightTriangle(3, 4, 5); //true
+isRightTriangle(3, 4, 8); //false
+
+//
+// CALLBACK
+//
+
+// example of common patern
+
+// searchMoviesAPI('Avengers', () => {
+// 	saveToMyDB(movies, () => {
+// 		// if it works, run this:
+// 	}, () => {
+// 		// if it doesn't work, run this:
+// 	})
+// })
