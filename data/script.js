@@ -775,16 +775,16 @@ movies.map((movie) => {
 
 // THE CALL STACK //stosy, call stack, call stacks
 
-const multiply = (x, y) => x * y;
+// const multiply = (x, y) => x * y;
 
-const square = (x) => multiply(x, x);
+// const square = (x) => multiply(x, x);
 
-const isRightTriangle = (a, b, c) => {
-	return square(a) + square(b) === square(c);
-};
+// const isRightTriangle = (a, b, c) => {
+// 	return square(a) + square(b) === square(c);
+// };
 
-isRightTriangle(3, 4, 5); //true
-isRightTriangle(3, 4, 8); //false
+// isRightTriangle(3, 4, 5); //true
+// isRightTriangle(3, 4, 8); //false
 
 //
 // CALLBACK
@@ -799,3 +799,52 @@ isRightTriangle(3, 4, 8); //false
 // 		// if it doesn't work, run this:
 // 	})
 // })
+
+//
+// PROMISES
+//
+
+// PromiseStatus = "resolve" || "pending" || "rejected"
+
+// example of promies request
+
+// const fakeRequestPromise = (url) => {
+// 	return new Promise((resolve, reject) => {
+// 		const delay = Math.floor(Math.random() * 4500 + 500);
+// 		setTimeout(() => {
+// 			if (delay > 4000) {
+// 				reject("Connection Timeout");
+// 			} else {
+// 				resolve(`Here is your fake data from ${url}`);
+// 			}
+// 		}, delay);
+// 	});
+// };
+
+//
+////
+//
+
+// const request = fakeRequestPromise("google.com/search?q=animals");
+// request
+// 	.then(() => {
+// 		console.log("IT WORKED!");
+// 	})
+// 	.catch(() => {
+// 		console.log("DAMN, ERROR!");
+// 	});
+
+//
+// EASIEST WAY TO WRITE IT (FROM UP) !!!!!!!!
+//
+
+// fakeRequestPromise("google.com/search?q=animals")
+// 	.then(() => {
+// 		console.log("IT WORKED!");
+// 	})
+// 	.catch(() => {
+// 		console.log("DAMN, ERROR!");
+// 	});
+
+// if promise is resolved we've got --> console.log('IT WORKED!');
+// but if not ------------------------> console.log('DAMN, ERROR!');
