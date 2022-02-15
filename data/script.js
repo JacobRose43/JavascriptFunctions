@@ -848,3 +848,54 @@ movies.map((movie) => {
 
 // if promise is resolved we've got --> console.log('IT WORKED!');
 // but if not ------------------------> console.log('DAMN, ERROR!');
+
+//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+//
+// THE BEST WAY OF WRITING PROMIESES
+//
+
+// fakeRequestPromise("google.com/search?q=catanddogs/page1")
+// 	.then((data) => {
+// 		console.log("PAGE 1 WORKS!");
+// 		console.log(data);
+// 		return fakeRequestPromise("google.com/search?q=catanddogs/page2");
+// 	})
+// 	.then((data) => {
+// 		console.log("PAGE 2 WORKS!");
+// 		console.log(data);
+// 		return fakeRequestPromise("google.com/search?q=catanddogs/page3");
+// 	})
+// 	.then((data) => {
+// 		console.log("PAGE 3 WORKS!");
+// 		console.log(data);
+// 		return fakeRequestPromise("google.com/search?q=catanddogs/page4");
+// 	})
+// 	.then((data) => {
+// 		console.log("PAGE 4 WORKS!");
+// 		console.log(data);
+// 	})
+// 	.catch((err) => {
+// 		console.log("REQUEST FAILED!!!");
+// 		console.log(err);
+// 	});
+
+//
+//
+//
+//			 /// ////////////////// / /
+//			/   //              //    /
+//			/    //    /|     //     /
+//			 / /////   _|_  ///// /
+//				   //      //
+//				      ////
+//					   //
+//					   //
+//					   //
+//				     //////
+//				//////////////
+//
+//
+//
+//
+//
