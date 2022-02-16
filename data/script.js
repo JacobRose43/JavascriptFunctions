@@ -393,6 +393,8 @@ movies.map((movie) => {
 	console.log(`${movie.title} is rated ${movie.score}`);
 });
 
+console.log("\n-----------------------\n");
+
 //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 //DOM
 
@@ -919,3 +921,84 @@ movies.map((movie) => {
 //
 //
 //
+
+//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+// ASYNC FUNCTIONS
+
+// paterns
+
+// #1
+// async function hello() {
+// 	...
+// }
+
+// #2
+// let sign = async () => {
+// 	...
+// }
+
+// example
+
+// let sign = async () => {
+// 	return 'La La La La';
+// }
+
+// sign().then((data) => {
+// 	console.log(`Promies resolved with: ${data}`);
+// })
+
+// output: Promies resolved with: La La La La
+
+//
+// Throw an error
+
+// let sign = async () => {
+// 	throw "Holly molly, We have a situation!";
+// 	return "La La La La";
+// };
+
+// sign()
+// 	.then((data) => {
+// 		console.log(`Promies resolved with: ${data}`);
+// 	})
+// 	.catch((err) => {
+// 		console.log(`Promies Rejected with: ${err}`);
+// 	});
+
+//
+//
+// another example with async function,
+// COMMON, ONLY 4FUN LOGIN FUNCTION
+
+// const login = async (username, password) => {
+// 	if (!username || !password) throw "Missing Credentials";
+// 	if (password === "flyingmonkey333") return "Welcome!";
+// 	throw "Invalid Password";
+// };
+
+// login("hellothere111", "asda") // "asda" - THROW AN ERROR COZ IT'S INVALID PASSWORD
+// 	.then((msg) => {
+// 		console.log("Logged in!");
+// 		console.log(msg);
+// 	})
+// 	.catch((err) => {
+// 		console.log("Error!");
+// 		console.log(err);
+// 	});
+
+//
+//
+// AWAIT KEYWORD
+// ~ASYNC FUNC
+
+// async function rainbow() {
+// 	await delayedColorChange("red", 1000);
+// 	await delayedColorChange("orange", 1000);
+// 	await delayedColorChange("yellow", 1000);
+// 	await delayedColorChange("green", 1000);
+// 	await delayedColorChange("aqua", 1000);
+// 	await delayedColorChange("pink", 1000);
+// }
+
+// !!!!!! WITHOUT 'AWAIT' KEYWORD, that fucntion makes background instant PINK, after 1 sec
