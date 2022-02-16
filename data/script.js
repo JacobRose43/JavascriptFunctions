@@ -999,6 +999,38 @@ console.log("\n-----------------------\n");
 // 	await delayedColorChange("green", 1000);
 // 	await delayedColorChange("aqua", 1000);
 // 	await delayedColorChange("pink", 1000);
+//	return 'All done!';
 // }
 
 // !!!!!! WITHOUT 'AWAIT' KEYWORD, that fucntion makes background instant PINK, after 1 sec
+
+// rainbow().then(() => console.log("End of Rainbow!"));
+
+// async function printRainbow() {
+// 	await rainbow();
+// 	console.log("End of rainbow! (printfunction)");
+// }
+
+// await keyword after rainbow() in function above, order to wait until rainbow() function will end
+// then printing 'End of the rainbow! (printfunction)'
+
+// async function makeTwoRequests() {
+// 	let data1 = await fakeRequestPromise("/page1");
+// 	console.log(data1);
+// }
+
+// HANDLING ERRORS IN ASYNC FUNCTIONS
+
+// example
+
+async function makeTwoRequests() {
+	try {
+		let data1 = await fakeRequestPromise("/page1");
+		let data2 = await fakeRequestPromise("/page2");
+		let data3 = await fakeRequestPromise("/page3");
+		console.log(data1, data2, data3);
+	} catch (error) {
+		console.log("CAUGHT AN ERROR!!!");
+		console.log(`error is: ${error}`);
+	}
+}
