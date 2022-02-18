@@ -1023,14 +1023,14 @@ console.log("\n-----------------------\n");
 
 // example
 
-async function makeTwoRequests() {
-	try {
-		let data1 = await fakeRequestPromise("/page1");
-		let data2 = await fakeRequestPromise("/page2");
-		let data3 = await fakeRequestPromise("/page3");
-		console.log(data1, data2, data3);
-	} catch (error) {
-		console.log("CAUGHT AN ERROR!!!");
-		console.log(`error is: ${error}`);
-	}
-}
+// async function makeTwoRequests() {
+// 	try {
+// 		let data1 = await fakeRequestPromise("/page1");
+// 		let data2 = await fakeRequestPromise("/page2");
+// 		let data3 = await fakeRequestPromise("/page3");
+// 		console.log(data1, data2, data3);
+// 	} catch (error) {
+// 		console.log("CAUGHT AN ERROR!!!");
+// 		console.log(`error is: ${error}`);
+// 	}
+// }
